@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body onload="getBunnies()">
+    <h1>Make your bunny army</h1>
+    <form action="/wholeBunnies" method="POST">
+        <label for="ears-select"></label>
+        <select name="ears" id="eyes-select">
+            <option value="">--Please choose the ears--</option>
+            <option value="round">round</option>
+            <option value="pointy">pointy</option>
+            <option value="slanted">slanted</option>
+        </select>
+
+        <label for="eyes-select"></label>
+        <select name="eyes" id="eyes-select">
+            <option value="">--Please choose the eyes--</option>
+            <option value="unimpressed">unimpressed</option>
+            <option value="crazy">crazy</option>
+            <option value="sleepy">sleepy</option>
+            <option value="shocked">shocked</option>
+        </select>
+
+        <label for="body-select"></label>
+        <select name="body" id="body-select">
+            <option value="">--Please choose the body--</option>
+            <option value="bigTailOnLeft">big tail, on left</option>
+            <option value="bigTailOnRight">big tail, on right</option>
+            <option value="littleTailOnLeft">little tail, on left</option>
+            <option value="littleTailOnRight">little tail, on right</option>
+        </select>
+        
+
+        <button type="submit">Submit</button>
+    </form>
+    <section class="bunnyArmyGrouping">
+        
+    </section>
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+</html> 

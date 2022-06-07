@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eachBunnyCont {
+    text-align: center;
+    padding: 20px;
+}
+
+.bunnyArmyGrouping {
+    display: flex;
+    padding-top: 3rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
