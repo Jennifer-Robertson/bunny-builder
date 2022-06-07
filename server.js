@@ -41,9 +41,6 @@ app.get('/main.js', (req, res) => {
     res.sendFile(__dirname + '/main.js')
 })
 
-app.post("/bunny", (req, res) => {
-    console.log("bunny")
-})
 
 const mongoConnectionString = "mongodb+srv://bunnies:bunbun123@bunnies.arlgn.mongodb.net/?retryWrites=true&w=majority"
 MongoClient.connect(mongoConnectionString, {
@@ -88,14 +85,9 @@ MongoClient.connect(mongoConnectionString, {
         bunnyCollection.find().toArray()
         .then(results => {
             res.json(results)
-            console.log(results)
-        })
+         })
         .catch(error => console.error(error))
     })
-
-
-
-
 
 
     const PORT = 3001;
