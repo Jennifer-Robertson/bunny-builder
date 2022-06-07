@@ -80,7 +80,7 @@ MongoClient.connect(mongoConnectionString, {
                 .catch(error => console.error(error))
         }
         else {
-            res.redirect('/')
+            res.json({ error: "Please submit a full bunny! (Ears, eyes and body!!"})
         }
     })
 
